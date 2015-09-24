@@ -4,33 +4,50 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button bt1 = (Button) findViewById(R.id.first);
+        Button bt2 = (Button) findViewById(R.id.two);
+        Button bt3 = (Button) findViewById(R.id.three);
+        
+        //注册事件的三种写法
+        //1.写个内部类然后在new一下看phone的写法，2.就是这种写法
+        bt1.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				System.out.println("==");
+			}
+        	 
+        });
+       
+       
+        //第二种
+        bt2.setOnClickListener(this);
+        
     }
 
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		System.out.println("我是第二种写法，注意用了this这个类必须实现OnClickListener这个接口，且实现接口的方法");
+	}
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+    //第三种方法
+    //在按钮上直接用android:onClick="添加一个函数名" go to activity_main.xml修改
+	
+    //定义被添加的函数名
+	public void getScore(View v){
+		System.out.println("我是第三种写法，我必须在activity_main.xml里面添加onclick和方法，然后来到这里创建这个方法");
+	}
 }
