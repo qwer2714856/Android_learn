@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
         //给按钮写个侦听事件
         Button bt = (Button) findViewById(R.id.call);
         bt.setOnClickListener(new MyOnClickListener());
+        
     }
 
     class MyOnClickListener implements OnClickListener {
