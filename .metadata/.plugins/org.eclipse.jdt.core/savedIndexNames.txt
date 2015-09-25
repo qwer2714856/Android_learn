@@ -4,7 +4,6 @@ INDEX VERSION 1.126+E:\android\work_source\.metadata\.plugins\org.eclipse.jdt.co
 3755105612.index
 3254739994.index
 4284187642.index
-1222838767.index
 922915989.index
 1283118817.index
 2788825067.index

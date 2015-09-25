@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 			//打给谁
 			intent.setData(Uri.parse("tel:" + tx.getText().toString()));//这里必须要用tel:加起来告诉系统这是个电话。
 			//把动作告诉系统 就是启动了一个打电话的应用
-			startActivity(intent);//说白了就是启动系统的那个应用而已，因为没有API所以需要一个应用
+			startActivity(intent);
 			//这个地方代码没问题但是牵扯到了一个权限的问题，申请一下打电话权限用户同意就能打。
 			
 			
