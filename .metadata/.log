@@ -1506,3 +1506,6 @@ Binding(ALT+SHIFT+ARROW_UP,
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2015-09-25 09:39:16.237
 !MESSAGE Failed to load properties file for project 'viewEvent'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-25 11:40:09.593
+!MESSAGE Failed to load properties file for project 'phoneAndMessageLx'
