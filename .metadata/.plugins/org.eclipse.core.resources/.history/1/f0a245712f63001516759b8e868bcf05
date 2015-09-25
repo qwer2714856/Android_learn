@@ -1,0 +1,66 @@
+package com.theadventus.viewevent;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+
+public class MainActivity extends Activity implements OnClickListener {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Button bt = (Button) findViewById(R.id.bt);
+        //bt.setOnClickListener(new MyClass());
+        /*bt.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				System.out.println("2");
+			}
+        	
+        
+        });*/
+        //bt.setOnClickListener(this);
+        
+    }  
+    class MyClass implements OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			System.out.println("~~");
+		}
+    	
+    }
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		System.out.println(3);
+	}
+	
+	public void four(View v){
+		System.out.println(4);
+	}
+	/**
+	 * View详解
+	 * 三个按钮的指向都指过来了，如果区分，使用View v来区分。
+	 * View对象是系统传进来的，系统会把触发这个方法的那个组件作为View对象传进来。
+	 * @param v
+	 */
+	public void five(View v){
+		//通过对view对象的判断就可以知道用户点击的到底是哪一个对象。
+		//v.getId();//使用getId来获取指向这个方法的那些按钮的 哪一个id的按钮。
+		switch(v.getId()){
+		case R.id.five_1:System.out.println("hi");;break;
+		case R.id.five_2:System.out.println("hi2");;break;
+		}
+		System.out.println("hi");
+	}
+}
