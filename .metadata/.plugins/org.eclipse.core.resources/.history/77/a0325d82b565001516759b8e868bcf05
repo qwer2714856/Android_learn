@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.linearylayout.MainActivity" >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="第一个" 
+        android:layout_weight="1"
+        android:background="#fff111"
+        />
+     <TextView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="第一个" 
+        android:layout_weight="1"
+        android:background="#cccccc"
+        />
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="第一个" 
+        android:layout_weight="1"
+        android:background="#fff333"
+        />
+      
+       <TextView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:text="第一个" 
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        />
+     
+     
+
+</LinearLayout>
