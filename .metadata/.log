@@ -1659,3 +1659,12 @@ java.util.UnknownFormatConversionException: Conversion = 't'
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2015-09-28 13:59:36.766
 !MESSAGE Failed to load properties file for project 'linearylayout'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-28 17:16:43.654
+!MESSAGE Failed to load properties file for project 'frameLayout'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-28 17:29:59.228
+!MESSAGE Failed to load properties file for project 'relativeLayout'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-09-29 11:29:20.321
+!MESSAGE Failed to load properties file for project 'relativeLayoutDeom'
