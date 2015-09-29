@@ -77,7 +77,8 @@
         android:id="@+id/a1"
         android:layout_above="@id/a5"
         android:layout_toLeftOf="@id/a5"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@id/a4"
+        android:layout_alignRight="@id/a4"
         
         />
     
@@ -88,7 +89,8 @@
         android:id="@+id/a7"
         android:layout_below="@id/a5"
         android:layout_toLeftOf="@id/a5"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@id/a4"
+        android:layout_alignRight="@id/a4"
         
         />
     
@@ -100,7 +102,8 @@
         android:id="@+id/a3"
         android:layout_above="@id/a5"
         android:layout_toRightOf="@id/a5"
-        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/a6"
+        android:layout_alignRight="@id/a6"
         
         />
     
@@ -111,7 +114,8 @@
         android:id="@+id/a9"
         android:layout_below="@id/a5"
         android:layout_toRightOf="@id/a5"
-        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/a6"
+        android:layout_alignRight="@id/a6"
         
         />
       
