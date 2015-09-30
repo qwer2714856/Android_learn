@@ -1,0 +1,68 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theadventus.tablelayout.MainActivity" 
+    android:stretchColumns="1"
+    
+    >
+
+    <TableRow 
+        
+         >
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o" android:layout_gravity="right"/>
+        
+    </TableRow>
+    <TableRow 
+        
+         >
+        
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o" android:layout_gravity="right"/>
+    </TableRow>
+    <TableRow 
+        
+         >
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o" android:layout_gravity="right"/>
+        
+    </TableRow>
+    <TableRow 
+       
+         >
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o" android:layout_gravity="right"/>
+        
+    </TableRow>
+    <TableRow 
+       
+         >
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o" android:layout_gravity="right"/>
+        
+    </TableRow>
+    <TextView 
+        android:layout_width="10dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        
+        />
+    <TableRow 
+        
+         >
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o00000" android:layout_gravity="right"/>
+        
+    </TableRow>
+    
+    
+    
+
+</TableLayout>

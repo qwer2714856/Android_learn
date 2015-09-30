@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theadventus.framelayout.MainActivity" >
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="#f00000"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#cccccc"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="#eeeeee"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#000000"
+        android:layout_gravity="center"
+        />
+	<TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#eeeeee"
+        android:layout_gravity="center"
+        />
+</FrameLayout>

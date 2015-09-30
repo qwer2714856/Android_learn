@@ -1,0 +1,54 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theadventus.tablelayout.MainActivity" 
+    android:stretchColumns="1"
+    
+    >
+
+    <TableRow 
+        
+         >
+        <TextView android:text="  "/>
+        <TextView android:text="open"/>
+        <TextView android:text="c-o"/>
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+        
+    </TableRow>
+    <TableRow 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+        
+    </TableRow>
+
+</TableLayout>
