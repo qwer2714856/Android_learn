@@ -1683,3 +1683,6 @@ java.util.UnknownFormatConversionException: Conversion = 't'
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2015-09-30 16:35:05.724
 !MESSAGE activity_main.xml: "" in attribute "layout_y" is not a valid format.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2015-10-09 11:15:57.261
+!MESSAGE Failed to load properties file for project 'log_cat'
