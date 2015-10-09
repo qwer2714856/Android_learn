@@ -1,0 +1,45 @@
+package com.theadventus.neibucunzhu;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import java.io.*;
+
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
+   public void login(View v){
+	  EditText et_username =  (EditText) findViewById(R.id.username);
+	  EditText et_password =  (EditText) findViewById(R.id.password);
+	  
+	  CheckBox cb_ck = (CheckBox) findViewById(R.id.ck);
+	  
+	  String userName = et_username.getText().toString();
+	  String password = et_password.getText().toString();
+	  
+	  if(cb_ck.isChecked()){//勾选了是true
+		  //写到本地文件去
+		  File file = new File("data/data/com.theadventus.neibucunzhu/info.txt");
+		  try {
+			FileWriter fw = new FileWriter(file);
+			fw.write(userName+"\n\r");
+			fw.write(password+"\n\r");
+		  } catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	  }
+	  
+   }
+}

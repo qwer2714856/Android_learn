@@ -1,0 +1,57 @@
+package com.theadventus.neibucunzhu;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.io.*;
+
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
+   public void login(View v){
+	  EditText et_username =  (EditText) findViewById(R.id.username);
+	  EditText et_password =  (EditText) findViewById(R.id.password);
+	  
+	  CheckBox cb_ck = (CheckBox) findViewById(R.id.ck);
+	  
+	  String userName = et_username.getText().toString();
+	  String password = et_password.getText().toString();
+	  
+	  if(cb_ck.isChecked()){//勾选了是true
+		  //写到本地文件去 这就是内部存贮空间路径
+		  File file = new File("data/data/com.theadventus.neibucunzhu/info.txt");
+		  FileWriter fw = null;
+		  try {
+			fw = new FileWriter(file);
+			fw.write(userName+"\r\n");
+			fw.write(password+"\r\n");
+		  } catch (IOException e) {
+			// TODO Auto-generated catch block
+			  
+			e.printStackTrace();
+		}finally{
+			try {
+				fw.close();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+	  }
+	  //吐司对话框弹出对话框API 第一个参数上下文对象 Activity 本身就是一个上下文对象所以传this 第二个参数
+	  Toast.makeText(this, resId, duration);
+   }
+}

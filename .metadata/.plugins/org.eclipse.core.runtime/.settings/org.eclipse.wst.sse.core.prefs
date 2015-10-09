@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=test1,phone
+task-tag-projects-already-scanned=test1,phone,absoluteLayout,event,frameLayout,linearylayout,log_cat,message,phoneAndMessageLx,relativeLayout,relativeLayoutDeom,tableLayout,viewEvent
