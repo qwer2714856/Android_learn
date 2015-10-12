@@ -22,8 +22,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        et_username = (EditText) findViewById(R.id.username);
-        et_password = (EditText) findViewById(R.id.password);
+        EditText et_username = (EditText) findViewById(R.id.username);
+        EditText et_password = (EditText) findViewById(R.id.password);
         //¶ÁÊý¾Ý
   	  	this.readData(et_username, et_password);
     }

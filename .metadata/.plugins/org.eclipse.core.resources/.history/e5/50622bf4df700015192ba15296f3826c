@@ -16,14 +16,13 @@ import java.util.ArrayList;
 public class MainActivity extends Activity {
 
     private EditText et_username;
-	private EditText et_password;
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        et_username = (EditText) findViewById(R.id.username);
-        et_password = (EditText) findViewById(R.id.password);
+        EditText et_username = (EditText) findViewById(R.id.username);
+        EditText et_password = (EditText) findViewById(R.id.password);
         //¶ÁÊý¾Ý
   	  	this.readData(et_username, et_password);
     }
@@ -31,7 +30,7 @@ public class MainActivity extends Activity {
 
    public void login(View v){
 	  et_username = (EditText) findViewById(R.id.username);
-	  et_password = (EditText) findViewById(R.id.password);
+	  EditText et_password =  (EditText) findViewById(R.id.password);
 	  
 	  CheckBox cb_ck = (CheckBox) findViewById(R.id.ck);
 	  

@@ -10,28 +10,20 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.io.*;
-import java.util.ArrayList;
 
 
 public class MainActivity extends Activity {
 
-    private EditText et_username;
-	private EditText et_password;
-	@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        et_username = (EditText) findViewById(R.id.username);
-        et_password = (EditText) findViewById(R.id.password);
-        //读数据
-  	  	this.readData(et_username, et_password);
     }
 
 
    public void login(View v){
-	  et_username = (EditText) findViewById(R.id.username);
-	  et_password = (EditText) findViewById(R.id.password);
+	  EditText et_username =  (EditText) findViewById(R.id.username);
+	  EditText et_password =  (EditText) findViewById(R.id.password);
 	  
 	  CheckBox cb_ck = (CheckBox) findViewById(R.id.ck);
 	  
@@ -65,26 +57,12 @@ public class MainActivity extends Activity {
 	  Toast.makeText(this, "提示消息", Toast.LENGTH_SHORT).show();
 	 
    }
-   public void readData(EditText et_username, EditText et_password){
+   private void readData(EditText et_username, EditText et_password){
 	   File file = new File("data/data/com.theadventus.neibucunzhu/info.txt");
-	   BufferedReader fd = null;
-	   if(file.exists()){
+	   FileReader fd = null;
+	   
 	   try {
-		   fd = new BufferedReader(new FileReader(file));
-		   try {
-			String r = fd.readLine();
-			ArrayList <String> s = new ArrayList<String>();
-			   while(r != null){
-				   s.add(r);
-				   r = fd.readLine(); 
-			   }
-			   et_username.setText(s.get(0));
-			   et_password.setText(s.get(1));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		    
+		   fd = new FileReader(file);
 	   } catch (FileNotFoundException e) {
 		   // TODO Auto-generated catch block
 		   e.printStackTrace();
@@ -96,6 +74,5 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 	   }
-   }
    }
 }
