@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.theadventus.neibucunzhu&apos; to &apos;com.theadventus.cp_neibucunzhu&apos;&#x0D;&#x0A;- Original project: &apos;cp_neibucunzhu&apos;&#x0D;&#x0A;- Original element: &apos;cp_neibucunzhu/src/com.theadventus.neibucunzhu&apos;&#x0D;&#x0A;- Renamed element: &apos;cp_neibucunzhu/src/com.theadventus.cp_neibucunzhu&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.theadventus.neibucunzhu&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.theadventus.neibucunzhu" name="com.theadventus.cp_neibucunzhu" qualified="false" references="true" stamp="1444656258099" textual="false" version="1.0"/>
+</session>
